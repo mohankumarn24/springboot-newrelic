@@ -52,3 +52,44 @@ Commands:
  cd D:\dev\github\springboot-newrelic>
  mvn clean install
  java -javaagent:D:/dev/github/springboot-newrelic/newrelic-java/newrelic/newrelic.jar -jar target/springboot-newrelic-0.0.1-SNAPSHOT.jar
+
+
+NRQL (New Relic Query Language):
+
+     SELECT * from Transaction
+
+     | ---------------------- | ----------------------------- | ----------------------------------------------------------------------------------------- |
+     | Category               | Purpose                       | NRQL Query                                                                                |
+     | ---------------------- | ----------------------------- | ----------------------------------------------------------------------------------------- |
+     | Transaction Count      | Total requests processed      |  SELECT count(*) FROM Transaction SINCE 1 hour ago                                        |
+     | Average Response Time  | Average API latency           |  SELECT average(duration) FROM Transaction SINCE 1 hour ago                               |
+     | P95 / P99 Latency      | Tail latency analysis         |  SELECT percentile(duration, 95, 99) FROM Transaction SINCE 1 hour ago                    |
+     | Requests by Endpoint   | Traffic per endpoint          |  SELECT count(*) FROM Transaction FACET name SINCE 1 hour ago                             |
+     | Slowest Endpoints      | Find slow APIs                |  SELECT average(duration) FROM Transaction FACET name SINCE 1 hour ago LIMIT 10           |
+     | Throughput (RPM)       | Requests per minute           |  SELECT rate(count(*), 1 minute) FROM Transaction SINCE 1 hour ago                        |
+     | Throughput by Endpoint | RPM per API                   |  SELECT rate(count(*), 1 minute) FROM Transaction FACET name SINCE 1 hour ago             |
+     | Transaction Details    | View transaction events       |  SELECT * FROM Transaction LIMIT 100                                                      |
+     | Slowest Transactions   | Find slow requests            |  SELECT name, duration FROM Transaction ORDER BY duration DESC LIMIT 20                   |
+     | Order APIs Only        | Filter specific APIs          |  SELECT * FROM Transaction WHERE request.uri LIKE '/api/orders%' LIMIT 100                |
+     | Error Count            | Total application errors      |  SELECT count(*) FROM TransactionError SINCE 1 hour ago                                   |
+     | Error Rate             | Percentage of failed requests |  SELECT percentage(count(*), WHERE error IS true) FROM Transaction SINCE 1 hour ago       |
+     | Errors by Exception    | Most common exceptions        |  SELECT count(*) FROM TransactionError FACET error.class SINCE 1 hour ago                 |
+     | Heap Memory Usage      | JVM heap consumption          |  SELECT average(heapUsed) FROM JavaVirtualMachineSample SINCE 1 hour ago                  |
+     | GC Time                | Garbage Collection overhead   |  SELECT average(gcCpuTime) FROM JavaVirtualMachineSample SINCE 1 hour ago                 |
+     | Thread Count           | JVM thread monitoring         |  SELECT average(threadCount) FROM JavaVirtualMachineSample SINCE 1 hour ago               |
+     | CPU Usage              | Server CPU utilization        |  SELECT average(cpuPercent) FROM SystemSample SINCE 1 hour ago                            |
+     | Memory Usage           | Server memory utilization     |  SELECT average(memoryUsedBytes/memoryTotalBytes)*100 FROM SystemSample SINCE 1 hour ago  |
+     | Apdex Score            | User satisfaction metric      |  SELECT apdex(duration, t:0.5) FROM Transaction SINCE 1 hour ago                          |
+     | ---------------------- | ----------------------------- | ----------------------------------------------------------------------------------------- |
+
+Common NRQL's:
+
+     | ---------------------------------------- | ------------------------------------------------------------------- |
+     | Question                                 | Query                                                               |
+     | ---------------------------------------- | ------------------------------------------------------------------- |
+     | How much traffic is my service handling? | SELECT count(*) FROM Transaction                                    |
+     | Which API is slow?                       | SELECT average(duration) FROM Transaction FACET name                |
+     | What is the worst-case latency?          | SELECT percentile(duration, 95, 99) FROM Transaction                |
+     | Are users seeing failures?               | SELECT percentage(count(*), WHERE error IS true) FROM Transaction   |
+     | What exceptions are occurring?           | SELECT count(*) FROM TransactionError FACET error.class             |
+     | ---------------------------------------- | ------------------------------------------------------------------- |

@@ -59,6 +59,27 @@ public class OrderService {
         return order;
     }
 
+    // Example of custom New Relic instrumentation.
+    //  - Generally avoided unless additional business metrics or attributes
+    //    are required, as it introduces vendor-specific dependencies.
+    //  - For this project, New Relic Java Agent auto-instrumentation is sufficient.
+
+    /*
+    @Trace(dispatcher = true)
+    public Orders getOrderById(Long id) {
+        simulateLatency();
+        Orders order = orderDb.get(id);
+        if (order == null) {
+            NewRelic.noticeError("Order not found: " + id);
+            throw new OrderNotFoundException("Order not found with ID: " + id);
+        }
+        NewRelic.addCustomParameter("OrderID", id);
+        NewRelic.addCustomParameter("CustomerName", order.getCustomerName());
+        NewRelic.addCustomParameter("Status", order.getStatus());
+        return order;
+    }
+    */
+
     public List<Orders> getAllOrders() {
         simulateLatency();
         List<Orders> orders = new ArrayList<>(orderDb.values());
