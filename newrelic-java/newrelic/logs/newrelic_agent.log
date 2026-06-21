@@ -1,0 +1,205 @@
+2026-06-21T14:17:03,153+0530 [20096 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:17:03,154+0530 [20096 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:17:03,154+0530 [20096 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:17:03,154+0530 [20096 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:17:03,154+0530 [20096 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:17:03,154+0530 [20096 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:17:03,167+0530 [20096 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:17:11,089+0530 [20096 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:17:12,303+0530 [20096 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-06-21T14:17:12,303+0530 [20096 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-06-21T14:17:12,303+0530 [20096 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:17:12,303+0530 [20096 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:17:12,313+0530 [20096 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-06-21T14:17:12,553+0530 [20096 1] com.newrelic INFO: Setting audit_mode to false
+2026-06-21T14:17:12,736+0530 [20096 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\dev\github\springboot-newrelic\newrelic-java\newrelic\.\newrelic.yml
+2026-06-21T14:17:12,736+0530 [20096 1] com.newrelic INFO: New Relic Agent v9.3.0 has started
+2026-06-21T14:17:12,736+0530 [20096 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@c2e1f26
+2026-06-21T14:17:12,736+0530 [20096 1] com.newrelic INFO: Premain startup complete in 10,788ms
+2026-06-21T14:17:12,736+0530 [20096 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-06-21T14:17:16,419+0530 [20096 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.55
+2026-06-21T14:17:17,758+0530 [20096 57] com.newrelic INFO: Host name is HOME-DESKTOP, display host HOME-DESKTOP for application springboot-newrelic
+2026-06-21T14:17:17,759+0530 [20096 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:17:19,435+0530 [20096 57] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2026-06-21T14:17:21,187+0530 [20096 57] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-06-21T14:17:21,187+0530 [20096 57] com.newrelic INFO: Agent run id: BYqpcEmNLkdeAHC0jSL_tUhqN6V8AAIBAAAnIQEAAE6AAgQi_7OmAwAFOS4zLjAADEhPTUUtREVTS1RPUAATc3ByaW5nYm9vdC1uZXdyZWxpYw
+2026-06-21T14:17:21,187+0530 [20096 57] com.newrelic INFO: Agent 20096@HOME-DESKTOP/springboot-newrelic connected to collector.newrelic.com:443
+2026-06-21T14:17:21,187+0530 [20096 57] com.newrelic INFO: Reporting to: https://one.newrelic.com/redirect/entity/NzM4NjI1M3xBUE18QVBQTElDQVRJT058NTg3MTgzMDE0
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:17:21,203+0530 [20096 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:17:23,108+0530 [20096 57] com.newrelic INFO: Real user monitoring is enabled for application springboot-newrelic. Auto instrumentation is enabled.
+2026-06-21T14:17:23,108+0530 [20096 57] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-06-21T14:17:23,108+0530 [20096 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:18:21,380+0530 [20096 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T14:18:21,401+0530 [20096 60] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@363bf532 tried to finish but ServiceManager not started
+2026-06-21T14:18:22,720+0530 [20096 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:18:25,819+0530 [15024 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:18:25,833+0530 [15024 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:18:26,389+0530 [15024 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:18:27,419+0530 [15024 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-06-21T14:18:27,421+0530 [15024 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-06-21T14:18:27,422+0530 [15024 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:18:27,422+0530 [15024 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:18:27,426+0530 [15024 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-06-21T14:18:27,642+0530 [15024 1] com.newrelic INFO: Setting audit_mode to false
+2026-06-21T14:18:27,817+0530 [15024 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\dev\github\springboot-newrelic\newrelic-java\newrelic\.\newrelic.yml
+2026-06-21T14:18:27,822+0530 [15024 1] com.newrelic INFO: New Relic Agent v9.3.0 has started
+2026-06-21T14:18:27,822+0530 [15024 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@c2e1f26
+2026-06-21T14:18:27,822+0530 [15024 1] com.newrelic INFO: Premain startup complete in 3,057ms
+2026-06-21T14:18:27,826+0530 [15024 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-06-21T14:18:31,518+0530 [15024 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.55
+2026-06-21T14:18:32,831+0530 [15024 57] com.newrelic INFO: Host name is HOME-DESKTOP, display host HOME-DESKTOP for application springboot-newrelic
+2026-06-21T14:18:32,832+0530 [15024 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:18:34,535+0530 [15024 57] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Agent run id: BZYt0CjdgR5fAHC0jSL_tUhqN6W4AAIBAAAnIQEAADqwAgQi_7OmAwAFOS4zLjAADEhPTUUtREVTS1RPUAATc3ByaW5nYm9vdC1uZXdyZWxpYw
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Agent 15024@HOME-DESKTOP/springboot-newrelic connected to collector.newrelic.com:443
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Reporting to: https://one.newrelic.com/redirect/entity/NzM4NjI1M3xBUE18QVBQTElDQVRJT058NTg3MTgzMDE0
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:18:36,931+0530 [15024 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:18:37,727+0530 [15024 57] com.newrelic INFO: Real user monitoring is enabled for application springboot-newrelic. Auto instrumentation is enabled.
+2026-06-21T14:18:37,728+0530 [15024 57] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-06-21T14:18:37,728+0530 [15024 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:18:58,450+0530 [15024 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T14:18:58,474+0530 [15024 60] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@1f8e8ddd tried to finish but ServiceManager not started
+2026-06-21T14:18:59,541+0530 [15024 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:20:08,367+0530 [7400 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:20:08,379+0530 [7400 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:20:08,871+0530 [7400 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:20:09,820+0530 [7400 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-06-21T14:20:09,823+0530 [7400 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-06-21T14:20:09,823+0530 [7400 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:20:09,823+0530 [7400 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:20:09,831+0530 [7400 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-06-21T14:20:10,069+0530 [7400 1] com.newrelic INFO: Setting audit_mode to false
+2026-06-21T14:20:10,244+0530 [7400 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\dev\github\springboot-newrelic\newrelic-java\newrelic\.\newrelic.yml
+2026-06-21T14:20:10,251+0530 [7400 1] com.newrelic INFO: New Relic Agent v9.3.0 has started
+2026-06-21T14:20:10,251+0530 [7400 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@c2e1f26
+2026-06-21T14:20:10,251+0530 [7400 1] com.newrelic INFO: Premain startup complete in 2,939ms
+2026-06-21T14:20:10,253+0530 [7400 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-06-21T14:20:13,896+0530 [7400 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.55
+2026-06-21T14:20:15,262+0530 [7400 57] com.newrelic INFO: Host name is HOME-DESKTOP, display host HOME-DESKTOP for application springboot-newrelic
+2026-06-21T14:20:15,263+0530 [7400 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:20:16,107+0530 [7400 57] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2026-06-21T14:20:18,479+0530 [7400 57] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-06-21T14:20:18,480+0530 [7400 57] com.newrelic INFO: Agent run id: BbC0wGHUzuV6AHC0jSL_tUhqN6YwAAIBAAAnIQEAABzoAgQi_6aHAwAFOS4zLjAADEhPTUUtREVTS1RPUAATc3ByaW5nYm9vdC1uZXdyZWxpYw
+2026-06-21T14:20:18,480+0530 [7400 57] com.newrelic INFO: Agent 7400@HOME-DESKTOP/springboot-newrelic connected to collector.newrelic.com:443
+2026-06-21T14:20:18,480+0530 [7400 57] com.newrelic INFO: Reporting to: https://one.newrelic.com/redirect/entity/NzM4NjI1M3xBUE18QVBQTElDQVRJT058NTg3MTc5NjU1
+2026-06-21T14:20:18,482+0530 [7400 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:20:18,482+0530 [7400 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:20:18,482+0530 [7400 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:20:18,484+0530 [7400 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:20:18,484+0530 [7400 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:20:18,484+0530 [7400 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:20:19,572+0530 [7400 57] com.newrelic INFO: Real user monitoring is enabled for application springboot-newrelic. Auto instrumentation is enabled.
+2026-06-21T14:20:19,572+0530 [7400 57] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-06-21T14:20:19,572+0530 [7400 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:31:19,259+0530 [7400 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T14:31:19,283+0530 [7400 60] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@7d8c92ef tried to finish but ServiceManager not started
+2026-06-21T14:31:20,912+0530 [7400 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:39:33,909+0530 [6696 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:39:33,922+0530 [6696 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:39:34,424+0530 [6696 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:39:34,478+0530 [6696 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T14:39:34,479+0530 [6696 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-06-21T14:40:00,620+0530 [19812 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:40:00,622+0530 [19812 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:40:00,622+0530 [19812 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:40:00,622+0530 [19812 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:40:00,622+0530 [19812 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:40:00,622+0530 [19812 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:40:00,634+0530 [19812 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:40:01,124+0530 [19812 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:40:02,089+0530 [19812 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-06-21T14:40:02,092+0530 [19812 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-06-21T14:40:02,092+0530 [19812 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:40:02,092+0530 [19812 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:40:02,099+0530 [19812 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-06-21T14:40:02,346+0530 [19812 1] com.newrelic INFO: Setting audit_mode to false
+2026-06-21T14:40:02,526+0530 [19812 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\dev\github\springboot-newrelic\newrelic-java\newrelic\.\newrelic.yml
+2026-06-21T14:40:02,534+0530 [19812 1] com.newrelic INFO: New Relic Agent v9.3.0 has started
+2026-06-21T14:40:02,535+0530 [19812 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@c2e1f26
+2026-06-21T14:40:02,535+0530 [19812 1] com.newrelic INFO: Premain startup complete in 2,962ms
+2026-06-21T14:40:02,537+0530 [19812 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-06-21T14:40:05,782+0530 [19812 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.55
+2026-06-21T14:40:07,543+0530 [19812 57] com.newrelic INFO: Host name is HOME-DESKTOP, display host HOME-DESKTOP for application springboot-newrelic
+2026-06-21T14:40:07,544+0530 [19812 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:40:08,590+0530 [19812 57] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Agent run id: BcxWYnqFMLFbAHC0jSL_tUhqN6rgAAIBAAAnIQEAAE1kAgQi_6aHAwAFOS4zLjAADEhPTUUtREVTS1RPUAATc3ByaW5nYm9vdC1uZXdyZWxpYw
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Agent 19812@HOME-DESKTOP/springboot-newrelic connected to collector.newrelic.com:443
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Reporting to: https://one.newrelic.com/redirect/entity/NzM4NjI1M3xBUE18QVBQTElDQVRJT058NTg3MTc5NjU1
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:40:10,513+0530 [19812 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:40:12,083+0530 [19812 57] com.newrelic INFO: Real user monitoring is enabled for application springboot-newrelic. Auto instrumentation is enabled.
+2026-06-21T14:40:12,083+0530 [19812 57] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-06-21T14:40:12,083+0530 [19812 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:56:05,907+0530 [19812 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T14:56:05,929+0530 [19812 60] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@b220fe9 tried to finish but ServiceManager not started
+2026-06-21T14:56:06,748+0530 [19812 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-06-21T14:56:52,270+0530 [5648 1] com.newrelic INFO: Writing to New Relic log file: D:\dev\github\springboot-newrelic\newrelic-java\newrelic\logs\newrelic_agent.log
+2026-06-21T14:56:52,270+0530 [5648 1] com.newrelic INFO: JRE vendor Amazon.com Inc. version 21.0.10
+2026-06-21T14:56:52,271+0530 [5648 1] com.newrelic INFO: JVM vendor Amazon.com Inc. OpenJDK 64-Bit Server VM version 21.0.10+7-LTS
+2026-06-21T14:56:52,271+0530 [5648 1] com.newrelic INFO: OS Windows 11 version 10.0 arch amd64
+2026-06-21T14:56:52,271+0530 [5648 1] com.newrelic INFO: Agent Host: HOME-DESKTOP IP: 172.19.192.1
+2026-06-21T14:56:52,271+0530 [5648 1] com.newrelic INFO: New Relic Agent v9.3.0 is initializing...
+2026-06-21T14:56:52,283+0530 [5648 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 21
+2026-06-21T14:56:52,773+0530 [5648 36] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-06-21T14:56:53,706+0530 [5648 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-06-21T14:56:53,709+0530 [5648 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-06-21T14:56:53,709+0530 [5648 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:56:53,709+0530 [5648 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-06-21T14:56:53,716+0530 [5648 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-06-21T14:56:53,924+0530 [5648 1] com.newrelic INFO: Setting audit_mode to false
+2026-06-21T14:56:54,093+0530 [5648 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is D:\dev\github\springboot-newrelic\newrelic-java\newrelic\.\newrelic.yml
+2026-06-21T14:56:54,157+0530 [5648 1] com.newrelic INFO: New Relic Agent v9.3.0 has started
+2026-06-21T14:56:54,158+0530 [5648 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@c2e1f26
+2026-06-21T14:56:54,158+0530 [5648 1] com.newrelic INFO: Premain startup complete in 2,966ms
+2026-06-21T14:56:54,160+0530 [5648 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-06-21T14:56:57,209+0530 [5648 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.55
+2026-06-21T14:56:59,162+0530 [5648 57] com.newrelic INFO: Host name is HOME-DESKTOP, display host HOME-DESKTOP for application springboot-newrelic
+2026-06-21T14:56:59,163+0530 [5648 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T14:57:00,768+0530 [5648 57] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2026-06-21T14:57:02,392+0530 [5648 57] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-06-21T14:57:02,392+0530 [5648 57] com.newrelic INFO: Agent run id: BRnjUlKiHFIpAHC0jSL_tUhqN67cAAIBAAAnIQEAABYQAgQi_6aHAwAFOS4zLjAADEhPTUUtREVTS1RPUAATc3ByaW5nYm9vdC1uZXdyZWxpYw
+2026-06-21T14:57:02,393+0530 [5648 57] com.newrelic INFO: Agent 5648@HOME-DESKTOP/springboot-newrelic connected to collector.newrelic.com:443
+2026-06-21T14:57:02,393+0530 [5648 57] com.newrelic INFO: Reporting to: https://one.newrelic.com/redirect/entity/NzM4NjI1M3xBUE18QVBQTElDQVRJT058NTg3MTc5NjU1
+2026-06-21T14:57:02,395+0530 [5648 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:57:02,395+0530 [5648 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:57:02,395+0530 [5648 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:57:02,398+0530 [5648 57] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-06-21T14:57:02,398+0530 [5648 57] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-06-21T14:57:02,398+0530 [5648 57] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-06-21T14:57:03,490+0530 [5648 57] com.newrelic INFO: Real user monitoring is enabled for application springboot-newrelic. Auto instrumentation is enabled.
+2026-06-21T14:57:03,490+0530 [5648 57] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-06-21T14:57:03,490+0530 [5648 57] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-06-21T15:01:24,893+0530 [5648 31] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-06-21T15:01:24,918+0530 [5648 60] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@7c3d21d2 tried to finish but ServiceManager not started
+2026-06-21T15:01:26,951+0530 [5648 31] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown

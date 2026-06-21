@@ -1,0 +1,50 @@
+Notes
+ - This project is an independent Spring Boot application used to demonstrate New Relic monitoring.
+ - No New Relic dependency is added to the application.
+ - Monitoring is enabled using the New Relic Java Agent.
+ - Sample Order CRUD APIs are implemented using in-memory storage (ConcurrentHashMap).
+ - Preloaded sample order data is available when the application starts.
+ - Simulated latency is added to generate meaningful transaction traces and performance metrics in New Relic.
+ - Spring Boot Actuator is optional and is not required for New Relic monitoring.
+ - Running the Application with New Relic Agent
+   java -javaagent:D:/dev/github/springboot-newrelic/newrelic-java/newrelic/newrelic.jar -jar target/springboot-newrelic-0.0.1-SNAPSHOT.jar
+
+
+Create New Relic Key:
+ - License key:
+   291e52123a971d65b93e2a190b4a0ec91fe3NRAL
+
+ - User key:
+   NRAK-O3RV8B2ZW8TTD3QLB6QJPCL64CS
+
+Steps to configure:
+ - Download 'New Relic agent' zip file
+   URL: https://download.newrelic.com/newrelic/java-agent/newrelic-agent/9.3.0/
+   Zip File:  newrelic-java.zip
+
+ - Copy 'newrelic-java.zip' zip file to project root folder and extract
+
+ - Update the below fields in 'newrelic-java/newrelic.yml' file
+   license_key: '291e52123a971d65b93e2a190b4a0ec91fe3NRAL'
+   app_name: springboot-newrelic
+
+   development:
+     <<: *default_settings
+     app_name: springboot-newrelic (Development)
+
+   test:
+     <<: *default_settings
+     app_name: springboot-newrelic (Test)
+
+   production:
+     <<: *default_settings
+
+   staging:
+     <<: *default_settings
+     app_name: springboot-newrelic (Staging)
+
+
+Commands:
+ cd D:\dev\github\springboot-newrelic>
+ mvn clean install
+ java -javaagent:D:/dev/github/springboot-newrelic/newrelic-java/newrelic/newrelic.jar -jar target/springboot-newrelic-0.0.1-SNAPSHOT.jar
