@@ -27,7 +27,7 @@ Steps to configure:
  - Copy 'newrelic-java.zip' zip file to project root folder and extract
 
  - Update the below fields in 'newrelic-java/newrelic.yml' file
-   license_key: '291e52123a971d65b93e2a190b4a0ec91fe3NRAL'
+   license_key:
    app_name: springboot-newrelic
 
    development:
