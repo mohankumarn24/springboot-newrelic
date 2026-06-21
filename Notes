@@ -1,4 +1,8 @@
-Notes
+Reference:
+  - 'Application Monitoring in Java with New Relic (Free Setup)' by Integrations Ninjas
+  - https://www.youtube.com/watch?v=swpi7EVsVhc
+
+Notes:
  - This project is an independent Spring Boot application used to demonstrate New Relic monitoring.
  - No New Relic dependency is added to the application.
  - Monitoring is enabled using the New Relic Java Agent.
