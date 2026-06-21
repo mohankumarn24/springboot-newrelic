@@ -1,0 +1,318 @@
+{
+  "info": {
+    "_postman_id": "47d3debd-fdbd-4137-a747-555046b7a99a",
+    "name": "NewRelic",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44589713"
+  },
+  "item": [
+    {
+      "name": "1 - Create Order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customerName\":\"Sachin\",\r\n    \"product\":\"iPhone\",\r\n    \"quantity\":1,\r\n    \"price\":799.0,\r\n    \"status\":\"PENDING\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "1 - Create Order",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"customerName\":\"Sachin\",\r\n    \"product\":\"iPhone\",\r\n    \"quantity\":1,\r\n    \"price\":799.0,\r\n    \"status\":\"PENDING\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "orders"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 21 Jun 2026 09:11:49 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 3,\n    \"customerName\": \"Sachin\",\n    \"product\": \"iPhone\",\n    \"quantity\": 1,\n    \"price\": 799,\n    \"status\": \"PENDING\",\n    \"totalAmount\": 799\n}"
+        }
+      ]
+    },
+    {
+      "name": "2 - Get Order by Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/orders/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "orders",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "2 - Get Order by Id",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/orders/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "orders",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 21 Jun 2026 09:28:37 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"customerName\": \"Mohan\",\n    \"product\": \"Laptop\",\n    \"quantity\": 1,\n    \"price\": 50000,\n    \"status\": \"CREATED\",\n    \"totalAmount\": 50000\n}"
+        }
+      ]
+    },
+    {
+      "name": "3 - Get all Orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "3 - Get all Orders",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "orders"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 21 Jun 2026 09:11:57 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"customerName\": \"Mohan\",\n        \"product\": \"Laptop\",\n        \"quantity\": 1,\n        \"price\": 50000,\n        \"status\": \"CREATED\",\n        \"totalAmount\": 50000\n    },\n    {\n        \"id\": 2,\n        \"customerName\": \"Ravi\",\n        \"product\": \"Mobile\",\n        \"quantity\": 2,\n        \"price\": 20000,\n        \"status\": \"SHIPPED\",\n        \"totalAmount\": 40000\n    },\n    {\n        \"id\": 3,\n        \"customerName\": \"Sachin\",\n        \"product\": \"iPhone\",\n        \"quantity\": 1,\n        \"price\": 799,\n        \"status\": \"PENDING\",\n        \"totalAmount\": 799\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "4 - Update Order by Id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customerName\": \"Sachin\",\r\n    \"product\": \"iPhone\",\r\n    \"quantity\": 1,\r\n    \"price\": 799.0,\r\n    \"status\": \"SHIPPED\",\r\n    \"totalAmount\": 799.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/orders/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "orders",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "4 - Update Order by Id",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"customerName\": \"Sachin\",\r\n    \"product\": \"iPhone\",\r\n    \"quantity\": 1,\r\n    \"price\": 799.0,\r\n    \"status\": \"SHIPPED\",\r\n    \"totalAmount\": 799.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/orders/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "orders",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 21 Jun 2026 09:12:30 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 3,\n    \"customerName\": \"Sachin\",\n    \"product\": \"iPhone\",\n    \"quantity\": 1,\n    \"price\": 799,\n    \"status\": \"SHIPPED\",\n    \"totalAmount\": 799\n}"
+        }
+      ]
+    }
+  ]
+}
