@@ -15,9 +15,11 @@ Notes:
 
 
 Create New Relic Key:
- - License key (starts with '291'):
+ - License key:
+   291e*******NRAL
 
- - User key (starts with 'NRAK'):
+ - User key:
+   NRAK-********CS
 
 Steps to configure:
  - Download 'New Relic agent' zip file
@@ -27,7 +29,7 @@ Steps to configure:
  - Copy 'newrelic-java.zip' zip file to project root folder and extract
 
  - Update the below fields in 'newrelic-java/newrelic.yml' file
-   license_key:
+   license_key: '291e*******NRAL'
    app_name: springboot-newrelic
 
    development:
