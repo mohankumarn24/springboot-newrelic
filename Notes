@@ -15,11 +15,11 @@ Notes:
 
 
 Create New Relic Key:
- - License key:
-   291e*******NRAL
+ - License key (starts with '291'):
+   <license_key>
 
- - User key:
-   NRAK-********CS
+ - User key (starts with 'NRAK'):
+   <user_key>
 
 Steps to configure:
  - Download 'New Relic agent' zip file
