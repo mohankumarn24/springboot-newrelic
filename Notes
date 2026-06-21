@@ -16,10 +16,9 @@ Notes:
 
 Create New Relic Key:
  - License key:
-   291e*******NRAL
-
- - User key:
-   NRAK-********CS
+   User Profile > API Keys > Create a Key > Key Type = Ingest - License; Name =  springboot-newrelic > Create a Key > Copy the Key
+   
+   4e66*******NRAL
 
 Steps to configure:
  - Download 'New Relic agent' zip file
