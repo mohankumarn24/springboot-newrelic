@@ -39,4 +39,15 @@ public class OrderController {
     public void deleteOrderById(@PathVariable Long id) {
         orderService.deleteOrderById(id);
     }
+
+    @GetMapping("/test/slow")
+    public String slow() throws InterruptedException {
+        Thread.sleep(3000);
+        return "Done";
+    }
+
+    @GetMapping("/test/error")
+    public String error() {
+        throw new RuntimeException("Intentional error");
+    }
 }

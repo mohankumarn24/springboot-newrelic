@@ -1,3 +1,12 @@
+k6 Test:
+ - Tab 1:
+   mvn clean install
+   java -javaagent:D:/dev/github/springboot-newrelic/newrelic-java/newrelic/newrelic.jar -jar target/springboot-newrelic-0.0.1-SNAPSHOT.jar
+
+ - Tab 2:
+   k6 version
+   k6 run -e BASE_URL=http://localhost:8080 test.js
+
 Reference:
   - 'Application Monitoring in Java with New Relic (Free Setup)' by Integrations Ninjas
   - https://www.youtube.com/watch?v=swpi7EVsVhc
